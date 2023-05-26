@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hugo-front-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hugo-front
+  template:
+    metadata:
+      labels:
+        app: hugo-front
+    spec:
+      containers:
+        - name: hugo-front
+          image: hugom16/hugo-front:latest
+          ports:
+            - containerPort: 8000
