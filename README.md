@@ -24,4 +24,6 @@ J'ai choisi le port 6379 arbitrairement.
     - `docker push hugom16/hugo-front:latest`
     - création des fichier yaml pour le déploiement et le service
     - apply des 2 fichiers : `kubectl apply -f hugo_front_service.yaml `
-    - 
+    - `kubectl get services`, copié l'adresse ip externe suivi de `:port` et collé dans mon navigateur. Dans mon cas c'était `http://37.59.31.30:8000/` . Le port 8000 a été choisi arbitrairement.
+
+
